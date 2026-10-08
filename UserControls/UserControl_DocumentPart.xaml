@@ -1,0 +1,76 @@
+﻿<UserControl x:Class="GRIF.UserControls.UserControl_DocumentPart"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:GRIF.UserControls"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800">
+    <UserControl.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="pack://application:,,,/GRIF;component/Themes/ResourceDictionary.xaml"/>
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </UserControl.Resources>
+    
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition Width="40"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition MinHeight="50"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+
+        <Border 
+            Grid.Row="0" 
+            Grid.Column="0" 
+            Grid.ColumnSpan="2" 
+            Background="#7FB06F49" 
+            BorderBrush="#77add1"
+            BorderThickness="0"
+            CornerRadius="15"
+            Margin="5">
+
+            <TextBox 
+                VerticalAlignment="Center"
+                Margin="15,0,5,0" 
+                FontWeight="Bold" 
+                FontSize="16"
+                TextWrapping="Wrap"
+                IsReadOnly="True"
+                BorderThickness="0"
+                BorderBrush="Transparent"
+                Background="Transparent"
+                Text="{Binding DisplayName}"/>
+            
+        </Border>
+        
+        <!--
+        <TextBox 
+            Grid.Column="0"
+            Grid.Row="0"
+            Grid.ColumnSpan="2"
+            HorizontalAlignment="Right"
+            Margin="15,0,10,0"
+            Width="140" 
+            Height="30" 
+            Style="{StaticResource NumberTextBoxStyle}" 
+            Text="{Binding NumberOfEditing, UpdateSourceTrigger=PropertyChanged}" 
+            local:TextBoxBehavior.AllowPositiveNumbers="True"/>
+        -->
+        
+        <ItemsControl 
+            ItemsSource="{Binding Controls}"
+            Grid.Column="0"
+            Grid.Row="1">
+            <ItemsControl.ItemsPanel>
+                <ItemsPanelTemplate>
+                    <StackPanel Orientation="Vertical" />
+                </ItemsPanelTemplate>
+            </ItemsControl.ItemsPanel>
+        </ItemsControl>
+    </Grid>
+</UserControl>

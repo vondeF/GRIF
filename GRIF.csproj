@@ -1,0 +1,117 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+	<ApplicationIcon>Sources\grif2.ico</ApplicationIcon>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Configs\**" />
+    <Compile Remove="Шаблоны ГОСТ\**" />
+    <EmbeddedResource Remove="Configs\**" />
+    <EmbeddedResource Remove="Шаблоны ГОСТ\**" />
+    <None Remove="Configs\**" />
+    <None Remove="Шаблоны ГОСТ\**" />
+    <Page Remove="Configs\**" />
+    <Page Remove="Шаблоны ГОСТ\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="Sources\assignTableVersion.png" />
+    <None Remove="Sources\back.png" />
+    <None Remove="Sources\clearAllSorts.png" />
+    <None Remove="Sources\edit.png" />
+    <None Remove="Sources\goTotallyBack.png" />
+    <None Remove="Sources\goTotallyBackTable.png" />
+    <None Remove="Sources\grif2.ico" />
+    <None Remove="Sources\grif2.jpg" />
+    <None Remove="Sources\iconGRIF.ico" />
+    <None Remove="Sources\iconGRIF.png" />
+    <None Remove="Конфигурационные файлы\Профили модели.json" />
+    <None Remove="Конфигурационные файлы\Профили обмена.json" />
+    <None Remove="Шаблоны Профили модели\ГОСТ Р 58651.11-2024\Шаблон ГОСТ Р 58651.11-2024 03.12.2025 13.50.docx.docx" />
+    <None Remove="Шаблоны Профили модели\ГОСТ Р 58651.2-2019\Шаблон ГОСТ Р 58651.2-2019 09.09.2025 11.26.docx" />
+    <None Remove="Шаблоны Профили модели\ГОСТ Р 58651.2-2019\Шаблон ГОСТ Р 58651.2-2019 17.07.2026 14.42.docx" />
+    <None Remove="Шаблоны Профили модели\ГОСТ Р 58651.2026-2026\Шаблон ГОСТ Р 58651.2026-2026 01.04.2026 15.41.docx" />
+    <None Remove="Шаблоны Профили модели\ГОСТ Р 58651.2026-2026\Шаблон ГОСТ Р 58651.2026-2026 03.04.2026 12.58.docx" />
+    <None Remove="Шаблоны Профили модели\ГОСТ Р 58651.2026-2026\Шаблон ГОСТ Р 58651.2026-2026 09.09.2025 11.26.docx" />
+    <None Remove="Шаблоны Профили модели\ГОСТ Р 58651.3-2020\Шаблон ГОСТ Р 58651.3-2020 28.08.2026 15.30.docx" />
+    <None Remove="Шаблоны Профили модели\ГОСТ Р 58651.4-2020\Шаблон ГОСТ Р 58651.4-2020 03.12.2025 13.00.docx.docx" />
+    <None Remove="Шаблоны Профили обмена\Шаблон.docx" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="Конфигурационные файлы\Профили модели.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Конфигурационные файлы\Профили обмена.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Шаблоны Профили модели\ГОСТ Р 58651.11-2024\Шаблон ГОСТ Р 58651.11-2024 03.12.2025 13.50.docx.docx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Шаблоны Профили модели\ГОСТ Р 58651.2-2019\Шаблон ГОСТ Р 58651.2-2019 09.09.2025 11.26.docx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Шаблоны Профили модели\ГОСТ Р 58651.2-2019\Шаблон ГОСТ Р 58651.2-2019 17.07.2026 14.42.docx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Шаблоны Профили модели\ГОСТ Р 58651.2026-2026\Шаблон ГОСТ Р 58651.2026-2026 01.04.2026 15.41.docx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Шаблоны Профили модели\ГОСТ Р 58651.2026-2026\Шаблон ГОСТ Р 58651.2026-2026 03.04.2026 12.58.docx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Шаблоны Профили модели\ГОСТ Р 58651.2026-2026\Шаблон ГОСТ Р 58651.2026-2026 09.09.2025 11.26.docx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Шаблоны Профили модели\ГОСТ Р 58651.3-2020\Шаблон ГОСТ Р 58651.3-2020 28.08.2026 15.30.docx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Шаблоны Профили модели\ГОСТ Р 58651.4-2020\Шаблон ГОСТ Р 58651.4-2020 03.12.2025 13.00.docx.docx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Шаблоны Профили обмена\Шаблон.docx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Resource Include="Sources\goTotallyBackTable.png" />
+    <Resource Include="Sources\assignTableVersion.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="DocumentFormat.OpenXml" Version="3.5.1" />
+    <PackageReference Include="HtmlToOpenXml.dll" Version="3.3.1" />
+    <PackageReference Include="MaterialDesignColors" Version="5.3.0" />
+    <PackageReference Include="MaterialDesignThemes" Version="5.3.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="7.0.11" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="7.0.11">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="10.0.1" />
+    <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="7.0.11" />
+    <PackageReference Include="OpenXmlPowerTools" Version="4.5.3.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="GostObjectsClassLibrary">
+      <HintPath>..\GostToWord_Full\GostToWordConverter\GostObjectsClassLibrary\bin\Debug\net7.0\GostObjectsClassLibrary.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Sources\back.png" />
+    <Resource Include="Sources\clearAllSorts.png" />
+    <Resource Include="Sources\edit.png" />
+    <Resource Include="Sources\goTotallyBack.png" />
+    <Resource Include="Sources\grif2.ico" />
+    <Resource Include="Sources\grif2.jpg" />
+    <Resource Include="Sources\iconGRIF.ico" />
+    <Resource Include="Sources\iconGRIF.png" />
+  </ItemGroup>
+
+</Project>
